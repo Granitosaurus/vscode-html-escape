@@ -1,0 +1,38 @@
+{
+    "name": "html-escape",
+    "displayName": "HTML Escape",
+    "description": "HTML escape and unescape the selected text.",
+    "license": "GPLv3",
+    "publisher": "scrapecrow",
+    "readme": "README.md",
+    "repository": {
+        "url": "https://github.com/Granitosaurus/vscode-html-escape.git",
+        "type": "git"
+    },
+    "version": "0.1.1",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:htmlEscape.escape"
+    ],
+    "main": "./extension.js",
+    "contributes": {
+        "commands": [
+            {
+                "command": "htmlEscape.escape",
+                "title": "Escape HTML"
+            },
+            {
+                "command": "htmlEscape.unescape",
+                "title": "Unescape HTML"
+            }
+        ]
+    },
+    "dependencies": {
+        "he": "^1.2.0"
+    }
+}
